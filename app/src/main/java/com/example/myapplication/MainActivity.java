@@ -30,39 +30,11 @@ BluetoothAdapter bluetoothAdapter;
 Set<BluetoothDevice> pared;
 
 
-/*
-TextView textView;
-IntentFilter scanintentFilter=new IntentFilter(BluetoothAdapter.ACTION_SCAN_MODE_CHANGED);
-BroadcastReceiver scanmodereceiver=new BroadcastReceiver() {
-    @Override
-    public void onReceive(Context context, Intent intent) {
-        String action=intent.getAction();
-        if(action.equals(BluetoothAdapter.ACTION_SCAN_MODE_CHANGED))
-        {
-            int modevalue = intent.getIntExtra(BluetoothAdapter.EXTRA_SCAN_MODE,BluetoothAdapter.ERROR);
-            if (modevalue==BluetoothAdapter.SCAN_MODE_CONNECTABLE){
-                textView.setText("the driver is not discover");
-
-            }else if (modevalue==BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE)
-            {
-                textView.setText("Driver is in discoverable mode");
-            }else if (modevalue==BluetoothAdapter.SCAN_MODE_NONE)
-            {
-                textView.setText("the driver is not discover ///////////////////");
-
-            }
-            else {
-                textView.setText("erooor");
-            }
-        }
-
-    }
-};
 
 
 
 
- */
+
 
 
     public String getlocalbluetoothname(){
@@ -152,28 +124,5 @@ able.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
     }
 });
 
-
-
-
-
-
-//        textView=findViewById(R.id.text);
-  //      button=findViewById(R.id.btn);
-
-    /*  button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent discoverableIntent=new Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
-                discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION,8);
-                startActivity(discoverableIntent);
-
-
-            }
-        });
-        registerReceiver(scanmodereceiver,scanintentFilter);
-
-    }
-
-     */
 }
 }
